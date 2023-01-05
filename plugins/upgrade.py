@@ -5,58 +5,57 @@ from pyrogram import Client , filters
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
-	Price 0
+	👉ᴅᴀɪʟʏ  ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 1.2ɢʙ
+👉ᴘʀɪᴄᴇ ₹0 , 0$
 	
 	**🪙 Silver Tier 🪙** 
-	Daily  Upload  limit 10GB
-	Price Rs 66  ind /🌎 0.8$  per Month
+	👉ᴅᴀɪʟʏ  ᴜᴘʟᴏᴀᴅ  ʟɪᴍɪᴛ 10ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 10  ɪɴᴅ /🌎 0.8$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
-	Price Rs 100  ind /🌎 1.2$  per Month
+	👉ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 50ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 30  ɪɴᴅ /🌎 1.2$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	👉ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 50  ɪɴᴅ /🌎 2.5$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
-	
-	Pay Using Upi I'd ```7808912076@paytm```
+	Pay Using Upi I'd ```8757081330@paytm```
 	
 	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+        Payment To Admin @Rk_botowner"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiderDM")], 
-        			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
-        			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/Rk_botowner")], 
+        			[InlineKeyboardButton("UPI",url = "https://tools.apgy.in/upi/Rk+botz/8757081330@paytm/"),
+        			InlineKeyboardButton("Paypal",url = "https://paypal.me/vinaykumar009?country.x=IN&locale.x=en_GB")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
-@Client.on_message(filters.private & filters.command(["upgrade"]))
-async def upgradecm(bot,message):
+@Client.on_callback_query(filters.regex('upgrade'))
+async def upgrade(bot,update):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
-	Price 0
+	👉ᴅᴀɪʟʏ  ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 1.2ɢʙ
+👉ᴘʀɪᴄᴇ ₹0 , 0$
 	
 	**🪙 Silver Tier 🪙** 
-	Daily  Upload  limit 10GB
-	Price Rs 66  ind /🌎 0.8$  per Month
+	👉ᴅᴀɪʟʏ  ᴜᴘʟᴏᴀᴅ  ʟɪᴍɪᴛ 10ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 10  ɪɴᴅ /🌎 0.8$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
-	Price Rs 100  ind /🌎 1.2$  per Month
+	👉ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 50ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 30  ɪɴᴅ /🌎 1.2$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	👉ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
+👉ᴘʀɪᴄᴇ ₹ 50  ɪɴᴅ /🌎 2.5$  ᴘᴇʀ ᴍᴏɴᴛʜ
 	
-	
-	Pay Using Upi I'd ```7808912076@paytm```
+	Pay Using Upi I'd ```8757081330@paytm```
 	
 	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+        Payment To Admin @Rk_botowner"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiDerDM")], 
-        			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
-        			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
-	await message.reply_text(text = text,reply_markup = keybord)
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/Rk_botowner")], 
+        			[InlineKeyboardButton("UPI",url = "https://tools.apgy.in/upi/Rk+botz/8757081330@paytm/"),
+        			InlineKeyboardButton("Paypal",url = "https://paypal.me/vinaykumar009?country.x=IN&locale.x=en_GB")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+	await update.message.edit(text = text,reply_markup = keybord)
+	
